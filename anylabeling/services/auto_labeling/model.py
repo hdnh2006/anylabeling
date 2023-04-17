@@ -11,7 +11,7 @@ from .types import AutoLabelingResult
 
 class Model:
     BASE_DOWNLOAD_URL = (
-        "https://github.com/vietanhdev/anylabeling-assets/releases/download/v0.0.1/"
+        "https://github.com/vietanhdev/anylabeling-assets/releases/download/v0.2.0/"
     )
 
     class Meta:
@@ -34,6 +34,7 @@ class Model:
             config_names=self.Meta.required_config_names,
             config=self.config,
         )
+        print(self.config)
 
     def get_required_buttons(self):
         """
